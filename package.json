@@ -1,0 +1,13 @@
+{
+  "name": "jscord-storage",
+  "version": "0.0.1",
+  "description": "Upload file to the Discord server",
+  "main": "index.js",
+  "repository": "https://github.com/animemoeus/jscord-storage",
+  "author": "Arter Tendean <arter.tendean.07@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
