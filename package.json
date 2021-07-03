@@ -1,6 +1,6 @@
 {
   "name": "jscord-storage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Upload file to the Discord server",
   "main": "index.js",
   "repository": "https://github.com/animemoeus/jscord-storage",
