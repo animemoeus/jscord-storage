@@ -15,8 +15,9 @@ yarn add jscord-storage
 ```javascript
 const jscordStorage = require("jscord-storage");
 
-filename = "ynm.jpg";
-url = "https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg";
+const filename = "ynm.jpg";
+const url =
+  "https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg";
 
 jscordStorage
   .upload(ynm, url)
