@@ -1,6 +1,5 @@
 # jscord-storage
-
-Upload file to the Discord server
+Free unlimited file hosting using Discord server
 
 ---
 
