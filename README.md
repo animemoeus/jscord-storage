@@ -19,7 +19,7 @@ const url =
   "https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg";
 
 jscordStorage
-  .upload(ynm, url)
+  .upload(filename, url)
   .then((data) => {
     console.log(data);
   })
