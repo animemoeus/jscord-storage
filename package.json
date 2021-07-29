@@ -1,13 +1,16 @@
 {
   "name": "jscord-storage",
-  "version": "0.0.6",
-  "description": "Upload file to the Discord server",
-  "main": "index.js",
+  "version": "0.0.7",
+  "description": "Free unlimited file hosting using Discord server",
+  "main": "src/index.js",
   "repository": "https://github.com/animemoeus/jscord-storage",
   "author": "Arter Tendean <arter.tendean.07@gmail.com>",
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "axios": "^0.21.1"
-  }
+    "axios": "^0.21.1",
+    "form-data": "^4.0.0",
+    "validator": "^13.6.0"
+  },
+  "scripts": {}
 }
