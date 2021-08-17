@@ -4,6 +4,7 @@
   "description": "Free unlimited file hosting using Discord server",
   "main": "src/index.js",
   "repository": "https://github.com/animemoeus/jscord-storage",
+  "homepage": "https://discord-storage.animemoe.us",
   "author": "Arter Tendean <arter.tendean.07@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -12,5 +13,11 @@
     "form-data": "^4.0.0",
     "validator": "^13.6.0"
   },
+  "keywords": [
+    "discord",
+    "storage",
+    "unlimited"
+    "file hosting",
+  ],
   "scripts": {}
 }
