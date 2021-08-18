@@ -10,10 +10,8 @@ const upload = (filename, file) => {
 
   if (urlIsValid) {
     // upload from url
-
     const data = new FormData();
     const url = file;
-
     data.append("filename", filename);
     data.append("url", url);
 
@@ -21,6 +19,9 @@ const upload = (filename, file) => {
       method: "post",
       url: "https://discord-storage.animemoe.us/upload-from-url/",
       headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        Referer: "jscord-storage",
         ...data.getHeaders(),
       },
       data: data,
@@ -35,9 +36,7 @@ const upload = (filename, file) => {
       });
   } else {
     // upload from file
-
     const data = new FormData();
-
     data.append("filename", "test");
     data.append("file", fs.createReadStream(file));
 
@@ -45,6 +44,9 @@ const upload = (filename, file) => {
       method: "post",
       url: "https://discord-storage.animemoe.us/upload-from-file/",
       headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        Referer: "jscord-storage",
         ...data.getHeaders(),
       },
       data: data,
