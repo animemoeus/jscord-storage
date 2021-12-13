@@ -15,10 +15,9 @@ yarn add jscord-storage
 ```javascript
 const jscordStorage = require("jscord-storage");
 
-const filename = "result.jpg";
+const filename = "result.zip";
 // const file = '/path/to/your/file'
-const file =
-  "https://cdn.discordapp.com/attachments/858938620425404426/919795393422823465/sample.jpg";
+const file = "https://file-examples-com.github.io/uploads/2017/02/zip_5MB.zip";
 
 jscordStorage
   .upload(filename, file)
@@ -34,14 +33,12 @@ jscordStorage
 
 ```json
 {
-  "id": "919804651547787314",
-  "filename": "result.jpg",
-  "size": 1939099,
-  "url": "https://cdn.discordapp.com/attachments/858938620425404426/919804651547787314/result.jpg",
-  "proxy_url": "https://media.discordapp.net/attachments/858938620425404426/919804651547787314/result.jpg",
-  "width": 1248,
-  "height": 1868,
-  "content_type": "image/png"
+  "id": "919806297623396372",
+  "filename": "file.zip",
+  "size": 5452018,
+  "url": "https://cdn.discordapp.com/attachments/858938620425404426/919806297623396372/file.zip",
+  "proxy_url": "https://media.discordapp.net/attachments/858938620425404426/919806297623396372/file.zip",
+  "content_type": "application/zip"
 }
 ```
 
