@@ -6,9 +6,9 @@ const fs = require("fs");
 
 const upload = (filename, file) => {
   // check if file url is valid
-  const urlIsValid = validator.isURL(file);
+  const isURL = validator.isURL(file);
 
-  if (urlIsValid) {
+  if (isURL) {
     // upload from url
     const data = new FormData();
     const url = file;
@@ -21,7 +21,7 @@ const upload = (filename, file) => {
       headers: {
         "User-Agent":
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        Referer: "jscord-storage",
+        Referer: "jscord-storage-0.0.10",
         ...data.getHeaders(),
       },
       data: data,
@@ -37,7 +37,7 @@ const upload = (filename, file) => {
   } else {
     // upload from file
     const data = new FormData();
-    data.append("filename", "test");
+    data.append("filename", filename);
     data.append("file", fs.createReadStream(file));
 
     const config = {
@@ -46,7 +46,7 @@ const upload = (filename, file) => {
       headers: {
         "User-Agent":
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        Referer: "jscord-storage",
+        Referer: "jscord-storage-0.0.10",
         ...data.getHeaders(),
       },
       data: data,

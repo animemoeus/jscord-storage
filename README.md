@@ -15,10 +15,10 @@ yarn add jscord-storage
 ```javascript
 const jscordStorage = require("jscord-storage");
 
-const filename = "ynm.jpg";
+const filename = "result.jpg";
+// const file = '/path/to/your/file'
 const file =
-  "https://github.com/animemoeus/pyscord-storage/raw/master/sample.jpg";
-// const file = '/path/to/your/file' -> jscord-storage v0.0.7+
+  "https://cdn.discordapp.com/attachments/858938620425404426/919795393422823465/sample.jpg";
 
 jscordStorage
   .upload(filename, file)
@@ -32,19 +32,16 @@ jscordStorage
 
 ### Result
 
-```
+```json
 {
-  status: 200,
-  data: {
-    id: '860170376935637052',
-    filename: 'ynm.jpg',
-    size: 130407,
-    url: 'https://cdn.discordapp.com/attachments/858938620425404426/860170376935637052/ynm.jpg',
-    proxy_url: 'https://media.discordapp.net/attachments/858938620425404426/860170376935637052/ynm.jpg',
-    width: 537,
-    height: 954,
-    content_type: 'image/jpeg'
-  }
+  "id": "919804651547787314",
+  "filename": "result.jpg",
+  "size": 1939099,
+  "url": "https://cdn.discordapp.com/attachments/858938620425404426/919804651547787314/result.jpg",
+  "proxy_url": "https://media.discordapp.net/attachments/858938620425404426/919804651547787314/result.jpg",
+  "width": 1248,
+  "height": 1868,
+  "content_type": "image/png"
 }
 ```
 
@@ -56,8 +53,8 @@ jscordStorage
 ### About
 
 - Max upload size limit is 8MB. [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360031101592-Increase-max-file-size-for-free-accounts).
-- url vs proxy_url. [Click here for detail](https://www.reddit.com/r/discordapp/comments/e8lgj2/mediadiscordappnet_cdndiscordappcom/).
-- proxy_url. [Click here for detail](https://www.reddit.com/r/discordapp/comments/f1ixly/.discord_adding_lower_width_and_height_to_linked/).
+- `url` vs `proxy_url`. [Click here for detail](https://www.reddit.com/r/discordapp/comments/e8lgj2/mediadiscordappnet_cdndiscordappcom/).
+- `proxy_url`. [Click here for detail](https://www.reddit.com/r/discordapp/comments/f1ixly/.discord_adding_lower_width_and_height_to_linked/).
 - Attachments URL. [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360061593771-Privacy-for-CDN-attachements).
 
 ### Increase Upload Limit

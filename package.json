@@ -1,6 +1,6 @@
 {
   "name": "jscord-storage",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Free unlimited file hosting using Discord server",
   "main": "src/index.js",
   "repository": "https://github.com/animemoeus/jscord-storage",
