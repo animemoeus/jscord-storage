@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "axios": "^0.25.0",
+    "axios": "^0.26.0",
     "form-data": "^4.0.0",
     "validator": "^13.6.0"
   },
