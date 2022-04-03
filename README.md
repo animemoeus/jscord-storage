@@ -64,3 +64,4 @@ jscordStorage
 
 - https://api.animemoe.us/waifu/
 - https://waifu.animemoe.us/
+- https://github.com/animemoeus/tiktod
