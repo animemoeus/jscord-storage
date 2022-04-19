@@ -1,6 +1,9 @@
 # jscord-storage
 
 Free unlimited file hosting using Discord server
+---
+## Server Status
+- [Click Here](https://stats.uptimerobot.com/GKy6liBGw7/788953682)
 
 ---
 
