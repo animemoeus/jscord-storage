@@ -1,6 +1,7 @@
 # jscord-storage
 
-## Free unlimited file hosting using Discord server
+Free unlimited file storage 😁👍
+---
 
 ## Server Status
 
@@ -14,46 +15,45 @@
 yarn add jscord-storage
 ```
 
+---
+
 ## Example
 
 ```javascript
-const jscordStorage = require("jscord-storage");
+import { uploadFromFile, uploadFromURL } from 'jscord-storage';
 
-const filename = "result.zip";
-// const file = '/path/to/your/file'
-const file = "https://file-examples-com.github.io/uploads/2017/02/zip_5MB.zip";
+const testUploadFromURL = async () => {
+  const response = await uploadFromURL(
+    'test.jpg',
+    'https://cdn.discordapp.com/attachments/858938620425404426/1076560199218892902/waifu-animemoeus.jpg'
+  );
 
-jscordStorage
-  .upload(filename, file)
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+  console.log(response);
+};
+
+const testUploadFromFile = async () => {
+  const response = await uploadFromFile('./test.js');
+
+  console.log(response);
+};
+
+testUploadFromURL();
+testUploadFromFile();
+
 ```
 
-## Result
-
-```json
-{
-  "id": "919806297623396372",
-  "filename": "file.zip",
-  "size": 5452018,
-  "url": "https://cdn.discordapp.com/attachments/858938620425404426/919806297623396372/file.zip",
-  "proxy_url": "https://media.discordapp.net/attachments/858938620425404426/919806297623396372/file.zip",
-  "content_type": "application/zip"
-}
-```
+---
 
 ## API
 
-- [Upload From URL](https://discord-storage.animemoe.us/api/upload-from-url/)
-- [Upload From File](https://discord-storage.animemoe.us/api/upload-from-file/)
+- [Upload From URL](https://discord-storage.animemoe.us/api/api/upload-from-url/)
+- [Upload From File](https://discord-storage.animemoe.us/api/api/upload-from-file/)
+
+---
 
 ## About
 
-- Max upload size limit is 8MB. [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360031101592-Increase-max-file-size-for-free-accounts).
+- Max upload size limit is [25MB](https://twitter.com/discord/status/1645522780337885184) 🥳
 - `url` vs `proxy_url`. [Click here for detail](https://www.reddit.com/r/discordapp/comments/e8lgj2/mediadiscordappnet_cdndiscordappcom/).
 - `proxy_url`. [Click here for detail](https://www.reddit.com/r/discordapp/comments/f1ixly/.discord_adding_lower_width_and_height_to_linked/).
 - Attachments URL. [Click here for detail](https://support.discord.com/hc/en-us/community/posts/360061593771-Privacy-for-CDN-attachements).
