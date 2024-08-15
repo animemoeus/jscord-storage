@@ -4,6 +4,10 @@
 
 - [Click Here](https://stats.uptimerobot.com/GKy6liBGw7/788953682)
 
+## Bypass Expired URL
+
+- https://github.com/animemoeus/backend/wiki/Discord#refresh-expired-url
+
 ## Installation
 
 ```bash
